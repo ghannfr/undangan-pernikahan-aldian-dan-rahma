@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', serif;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            color: #4a4a4a;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .header {
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .header::before, .header::after {
+            content: '❦';
+            color: #d4af37;
+            font-size: 2em;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .header::before {
+            left: 20px;
+        }
+        
+        .header::after {
+            right: 20px;
+        }
+        
+        .bismillah {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #d4af37, #f9d423);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .photo {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            border: 5px solid white;
+        }
+        
+        .names {
+            font-size: 2.8em;
+            background: linear-gradient(45deg, #d4af37, #f9d423);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            margin: 30px 0;
+            font-family: 'Brush Script MT', cursive;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .date-venue {
+            background: linear-gradient(135deg, #faf6f1 0%, #f3e7e9 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .details {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+        
+        .details h3 {
+            color: #d4af37;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .ornament {
+            font-size: 2.5em;
+            background: linear-gradient(45deg, #d4af37, #f9d423);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            margin: 30px 0;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .footer {
+            margin-top: 40px;
+            font-style: italic;
+            color: #666;
+            padding: 20px;
+            border-top: 2px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .decoration {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.1;
+            background-image: 
+                radial-gradient(circle at 100% 100%, #d4af37 0%, transparent 50%),
+                radial-gradient(circle at 0% 0%, #f9d423 0%, transparent 50%);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+            .names {
+                font-size: 2.2em;
+            }
+            .header::before, .header::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="decoration"></div>
+    <div class="container">
+        <div class="header">
+            <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</div>
+            <p>Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri pernikahan kami:</p>
+        </div>
+
+        <img src="ujo.jpg" alt="Foto Pengantin" class="photo">
+
+        <div class="names">
+            Aldian Hidayat<br>
+            &<br>
+            Rahma
+        </div>
+
+        <div class="date-venue">
+            <div class="details">
+                <h3>✧ Akad Nikah ✧</h3>
+                <p>Minggu, 3 November 2024<br>
+                Pukul 09.00 - 11.00 WIB</p>
+
+                <h3>✧ Resepsi ✧</h3>
+                <p>Minggu, 3 November 2024<br>
+                Pukul 13.00 - 21.00 WIB</p>
+
+                <h3>✧ Tempat ✧</h3>
+                <p>SDN Majalaya 5<br>
+                Jl. Raya Laswi No. 298 Desa Majalaya Kecamatan Majalaya</p>
+            </div>
+        </div>
+
+        <div class="ornament">❦</div>
+
+        <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.</p>
+
+        <div class="footer">
+            <p>Kami yang berbahagia,<br>
+            Keluarga Besar Aldian Hidayat<br>
+            Keluarga besar Rahma</p>
+        </div>
+    </div>
+</body>
+</html>
